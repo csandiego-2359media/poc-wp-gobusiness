@@ -10,7 +10,7 @@ Goto `http://localhost:8080/` for the public site, and `http://localhost:8080/wp
 
 ```
 $ cd ..
-$ zip poc-wp-gobusiness.zip poc-wp-gobusiness
+$ zip -r poc-wp-gobusiness.zip poc-wp-gobusiness
 ```
 
 # Install the theme
