@@ -140,8 +140,12 @@ add_action( 'widgets_init', 'gobusiness_widgets_init' );
 function gobusiness_scripts() {
 	wp_enqueue_style( 'gobusiness-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'gobusiness-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'gobusiness-componenets-style', get_template_directory_uri() . '/poc-gobiz-webcomponent.css', array(), _S_VERSION);
+	wp_style_add_data( 'gobusiness-componenets-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'gobusiness-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'gobusiness-componenets', get_template_directory_uri() . '/js/poc-gobiz-webcomponents.js', array(), _S_VERSION, false );
+	wp_enqueue_script( 'gobusiness-variables', get_template_directory_uri() . '/js/poc-gobiz-variables.js', array(), _S_VERSION, false );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

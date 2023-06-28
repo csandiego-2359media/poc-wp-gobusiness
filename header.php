@@ -17,11 +17,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+	<script type="text/javascript">var process = {env: {NODE_ENV: null}};</script>
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="http://localhost:8081/style.css" />
-    <script type="text/javascript">var process = {env: {NODE_ENV: null}};</script>
-    <script type="text/javascript" src="http://localhost:8081/poc-gobiz-webcomponents.js"></script>
-    <script type="text/javascript" src="http://localhost:8081/script.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
