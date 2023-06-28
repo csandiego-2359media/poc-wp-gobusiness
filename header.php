@@ -18,9 +18,17 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	<link rel="stylesheet" href="http://localhost:8081/style.css" />
+    <script type="text/javascript">var process = {env: {NODE_ENV: null}};</script>
+    <script type="text/javascript" src="http://localhost:8081/poc-gobiz-webcomponents.js"></script>
+    <script type="text/javascript" src="http://localhost:8081/script.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
+<div>
+	<gb-header id="header" logo-url="/" option-list="optionList"
+		login-url="https://dashboard.gobusiness.gov.sg/login" />
+</div>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'gobusiness' ); ?></a>
